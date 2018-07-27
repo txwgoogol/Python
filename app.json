@@ -6,7 +6,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "white",
-    "navigationBarTitleText": "TotnWeather",
+    "navigationBarTitleText": "小丫天气",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
   }

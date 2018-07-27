@@ -1,0 +1,34 @@
+
+<view class='weather' style='background:url("http://pic9.photophoto.cn/20081027/0005018476746923_b.jpg");-webkit-background-size:cover;'>
+  <view class='TotnWeather'>
+    <view class="city">{{weatherData.currentCity}}</view>
+    <view class='temp'>{{temp}}</view>
+    <view class='weatherDesc'>{{weatherData.weatherDesc}}</view>
+    <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="3000">
+      <block wx:for="{{msgList}}">
+      <navigator url="/pages/index/index?title={{item.url}}" open-type="navigate">
+        <swiper-item>
+        <view class="swiper_item">{{item.title}}</view>
+        </swiper-item>
+      </navigator>
+      </block>
+    </swiper>
+  </view>
+  <view class='pm25'>
+    <!-- <image></image> -->
+    <view class='pm25_num'>{{weatherData.pm25}}</view>
+    <view class='pm_level'>{{pm25}}</view> 
+    <!-- <view wx:if="{{weatherData.pm25 > 250}}">严重污染</view>
+    <view wx:elif="{{250 <= weatherData.pm25 && weatherData.pm25 > 150}}">重度污染</view>
+    <view wx:elif="{{150 <= weatherData.pm25 && weatherData.pm25 > 115}}">中度污染</view>
+    <view wx:elif="{{115 <= weatherData.pm25 && weatherData.pm25 > 75}}">轻度污染</view> 
+    <view wx:elif="{{75 >= weatherData.pm25 && weatherData.pm25 > 35 }}">良</view>   
+    <view wx:else="{{35 < weatherData.pm25 && weatherData.pm25 >= 0}}">优</view>  -->
+  </view>
+</view>
+<block wx:for="{{index}}">
+    <view class="index">  
+        <view class="title">{{item.tipt}}</view>
+        <view class="des">{{item.des}}</view>  
+    </view>
+</block>

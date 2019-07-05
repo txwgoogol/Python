@@ -1,13 +1,27 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序获取天气信息"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "white",
-    "navigationBarTitleText": "小丫天气",
+    "navigationBarTitleText": "TOTN WEATHER",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
-  }
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wxe5f52902cf4de896"
+  ],
+  "sitemapLocation": "sitemap.json"
 }

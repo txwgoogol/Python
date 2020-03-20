@@ -1,5 +1,9 @@
 
-<view class='weather' style='background:url("http://pic9.photophoto.cn/20081027/0005018476746923_b.jpg");-webkit-background-size:cover;'>
+<view class='weather' 
+style='background:url="";-webkit-background-size:cover;'>
+
+<!-- 背景 https://blog.csdn.net/love_fish_dream/article/details/84644438 -->
+  <!-- <image src="../../image/weather.jpg"/> -->
   <view class='TotnWeather'>
     <view class="city">{{weatherData.currentCity}}</view>
     <view class='temp'>{{temp}}</view>

@@ -10,8 +10,8 @@
   },
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "white",
-    "navigationBarTitleText": "TOTN WEATHER",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WEATHER",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
   },
